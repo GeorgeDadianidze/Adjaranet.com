@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adjaranet.com</title>
+  </head>
+  <body id="body" class="index-body">
+    <header class="main-header">
+      <nav class="navbar">
+        <i class="ph-list hamburger" onclick="mobileTabletMenu()"></i>
+        <section class="links1">
+          <a href="index.html">adjara<span class="logo-span">net</span>.com</a>
+        </section>
+        <section class="links2">
+          <a href="/TV.html">
+            <i class="ph-television"></i>
+            <p>TV</p>
+          </a>
+          <a href="/ფილმები.html">
+            <i class="ph-film-slate"></i>
+            <p class="translate-navbar-movies">ფილმები</p>
+          </a>
+          <a href="საბავშვო.html">
+            <i class="ph-baby"></i>
+            <p class="translate-navbar-kids">საბავშვო</p>
+          </a>
+        </section>
+
+        <i
+          class="ph-magnifying-glass"
+          style="color: white; cursor: pointer"
+        ></i>
+
+        <div class="sign">
+          <section class="links2 auth">
+            <a href="signin.html" class="translate-signin">ავტორიზაცია</a>
+          </section>
+          <section class="links2 auth" id="signin">
+            <a href="signup.html" class="translate-signup">რეგისტრაცია</a>
+          </section>
+        </div>
+      </nav>
+      <section class="pic">
+        <i class="ph-caret-left arrow1" id="arrow1" onclick="Balls(this)"></i>
+        <i class="ph-caret-right arrow2" id="arrow2" onclick="Balls(this)"></i>
+      </section>
+
+      <section class="movie-names">
+        <h2 class="title-geo translate-title-eng">
+          შურისმაძიებლები: უსასრულობის ომი
+        </h2>
+        <div>
+          <button
+            class="btn btn-highlight btn1"
+            id="btn1"
+            onclick="Balls(this)"
+          ></button>
+          <button class="btn btn2" id="btn2" onclick="Balls(this)"></button>
+          <button class="btn btn3" id="btn3" onclick="Balls(this)"></button>
+          <button class="btn btn4" id="btn4" onclick="Balls(this)"></button>
+          <button class="btn btn5" id="btn5" onclick="Balls(this)"></button>
+          <button class="btn btn6" id="btn6" onclick="Balls(this)"></button>
+        </div>
+      </section>
+
+      <section class="search">
+        <input
+          type="text"
+          placeholder="ძიება..."
+          class="search-box main-search-eng"
+        />
+        <i class="ph-magnifying-glass search-svg"></i>
+      </section>
+    </header>
+    <a class="contact-fixed" href="/კონტაქტი.html">
+      <i class="ph-envelope contact-svg"></i>
+      <p class="translate-contact">კონტაქტი</p>
+    </a>
+    <div class="articles">
+      <article class="top-movies">
+        <h2 class="translate-topfilms">ტოპ ფილმები</h2>
+        <section class="movies movies-wrap">
+          <img
+            src="/imgs/11746-8822b3a4f732a28db1d10002e6cecd23.jpg"
+            alt="Game Of Thrones"
+          />
+          <img src="/imgs/BB.jpg" alt="Breaking Bad" />
+          <img src="/imgs/gf.jpg" alt="godfather" />
+          <img src="/imgs/lr.jpg" alt="lord of the rings" />
+          <img src="/imgs/vk.jpg" alt="vikings" />
+        </section>
+      </article>
+      <article class="premier">
+        <h2 class="translate-premier">პრემიერა</h2>
+        <section class="movies movies-wrap">
+          <img src="/imgs/badguys.jpg" alt="bad guys" />
+          <img src="/imgs/head-hunter.jpg" alt="head hunter" />
+          <img src="/imgs/dumbledore.jpg" alt="dumbledore" />
+          <img src="/imgs/uncharted.jpg" alt="uncharted" />
+          <img src="/imgs/morbius.jpg" alt="morbius" />
+        </section>
+      </article>
+      <article class="trailers">
+        <h2 class="translate-trailers">თრეილერები</h2>
+        <section class="movies movies-wrap">
+          <img src="/imgs/disney.jpg" alt="disney" />
+          <img src="/imgs/thor.jpg" alt="Thor" />
+          <img src="/imgs/money-heist.jpg" alt="money heist" />
+          <img src="/imgs/bride.jpg" alt="bride" />
+          <img src="/imgs/avatar.jpg" alt="avatar" />
+        </section>
+      </article>
+    </div>
+    <footer>
+      <p class="translate-footer"><span>18+</span>საიტი შეიცავს 18+ კონტენტს</p>
+      <p>&#169; 2013-2022 adjaranet.com</p>
+      <div>
+        <button
+          class="langbtn-eng"
+          id="index-lang-eng"
+          onclick="translateEng(this.id)"
+        >
+          ENG
+        </button>
+        <button
+          class="langbtn-geo"
+          id="index-lang-geo"
+          onclick="translateGeo(this.id)"
+        >
+          GEO
+        </button>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

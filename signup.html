@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adjaranet.com</title>
+  </head>
+  <body class="sign-body">
+    <section class="links1 sign-logo-outer">
+      <a href="index.html" class="sign-logo"
+        >adjara<span class="logo-span">net</span>.com</a
+      >
+    </section>
+    <main class="authenticate">
+      <div class="authenticate-container">
+        <div class="authenticate-child">
+          <div>
+        <button
+          class="langbtn-eng"
+          id="signup-lang-eng"
+          onclick="translateEng(this.id)"
+        >
+          ENG
+        </button>
+        <button
+          class="langbtn-geo"
+          id="signup-lang-geo"
+          onclick="translateGeo(this.id)"
+        >
+          GEO
+        </button>
+      </div>
+          <h1 class="signup-reg-eng">რეგისტრაცია</h1>
+        </div>
+        <div class="authenticate-child-2">
+          
+          <form>
+              <div class="mailcontainer" id="mailcontainer">
+                <input type="email" id="email" class="signup-email-eng" placeholder="შეიყვანეთ ელ.ფოსტა" required 
+              />
+              </div>
+            <div class="password-flex" id="password-cont">
+              <input type="password" class="signup-pass-eng" id="password" placeholder="შეიყვანეთ პაროლი" required />
+              <input
+                type="password" id="repeat-pass"
+                placeholder="დაადასტურეთ პაროლი"
+                class="signup-confpass-eng"
+                required
+              />
+            </div>
+            <div class="date-name-flex"></div>
+              <input type="date" id="date" />
+              <input type="text" id="name" class="signup-name-eng" placeholder="მომხმარებლის სახელი" required />
+            </div>
+            <div class="country-flex">
+              <input type="text" class="signup-country-eng" placeholder="ქვეყანა" required />
+              <input type="text" class="signup-city-eng" placeholder="ქალაქი" required />
+              <input type="number" class="signup-phone-eng" placeholder="მობილურის ნომერი" required />
+            </div>
+          </form>
+        </div>
+        
+        <div class="authenticate-child-3">
+          <button type="submit" class="btn-sign signup-btnreg-eng" onclick="validate ()">რეგისტრაცია</button>
+          <a class="signup-back-eng" href="index.html">უკან</a>
+          <a class="signup-sign-eng" href="signin.html">ავტორიზაცია</a>
+        </div>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

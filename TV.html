@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Adjaranet.com</title>
+  </head>
+  <body id="body">
+    <header class="main-header header-films">
+      <nav class="navbar navbar-films">
+        <i class="ph-list hamburger" onclick="mobileTabletMenu()"></i>
+
+        <div class="film-links">
+          <section class="links1">
+            <a href="index.html"
+              >adjara<span class="logo-span">net</span>.com</a
+            >
+          </section>
+          <section class="links2">
+            <a href="TV.html">
+              <i class="ph-television"></i>
+              <p>TV</p>
+            </a>
+            <a href="/ფილმები.html">
+              <i class="ph-film-slate"></i>
+              <p class="tv-films-eng">ფილმები</p>
+            </a>
+            <a href="საბავშვო.html">
+              <i class="ph-baby"></i>
+              <p class="tv-kids-eng">საბავშვო</p>
+            </a>
+          </section>
+          <i
+            class="ph-magnifying-glass"
+            style="color: white; cursor: pointer"
+          ></i>
+
+          <div class="sign">
+            <section class="links2 auth">
+              <a class="tv-signin-eng" href="signup.html">ავტორიზაცია</a>
+            </section>
+            <section class="links2 auth">
+              <a class="tv-signup-eng" href="signin.html">რეგისტრაცია</a>
+            </section>
+          </div>
+        </div>
+      </nav>
+      <section class="search search-films">
+        <input
+          type="text"
+          placeholder="ძიება..."
+          class="search-box tv-search-eng"
+        />
+        <i class="ph-magnifying-glass search-svg"></i>
+      </section>
+    </header>
+    <a class="contact-fixed" href="/კონტაქტი.html">
+      <i class="ph-envelope contact-svg"></i>
+      <p class="tv-cont-eng">კონტაქტი</p>
+    </a>
+    <section class="channels">
+      <h2 class="tv-chann-eng">არხები</h2>
+      <div class="channels-list">
+        <img src="/imgs/tv/მთავარი არხი.png" alt="" />
+        <img src="/imgs/tv/tv pirveli.png" alt="" />
+        <img src="/imgs/tv/teleskola.png" alt="" />
+        <img src="/imgs/tv/starvizia.png" alt="" />
+        <img src="/imgs/tv/silkuniversali.png" alt="" />
+        <img src="/imgs/tv/ragbytv.png" alt="" />
+        <img src="/imgs/tv/postv.png" alt="" />
+        <img src="/imgs/tv/pirveli.png" alt="" />
+        <img src="/imgs/tv/palitranews.png" alt="" />
+        <img src="/imgs/tv/musicbox.png" alt="" />
+        <img src="/imgs/tv/marao.png" alt="" />
+        <img src="/imgs/tv/imedifm.png" alt="" />
+        <img src="/imgs/tv/imedi.png" alt="" />
+        <img src="/imgs/tv/formula.png" alt="" />
+        <img src="/imgs/tv/euronews.png" alt="" />
+        <img src="/imgs/tv/comedy.png" alt="" />
+        <img src="/imgs/tv/bastibubu.png" alt="" />
+        <img src="/imgs/tv/artarea.png" alt="" />
+        <img src="/imgs/tv/agro.png" alt="" />
+        <img src="/imgs/tv/afxazetisxma.png" alt="" />
+      </div>
+    </section>
+    <footer>
+      <p class="tv-footer-eng"><span>18+</span>საიტი შეიცავს 18+ კონტენტს</p>
+      <p>&#169; 2013-2022 adjaranet.com</p>
+      <div>
+        <button
+          class="langbtn-eng"
+          id="tv-lang-eng"
+          onclick="translateEng(this.id)"
+        >
+          ENG
+        </button>
+        <button
+          class="langbtn-geo"
+          id="tv-lang-geo"
+          onclick="translateGeo(this.id)"
+        >
+          GEO
+        </button>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

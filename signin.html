@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adjaranet.com</title>
+  </head>
+  <body class="sign-body">
+    <section class="links1 sign-logo-outer">
+      <a href="index.html" class="sign-logo"
+        >adjara<span class="logo-span">net</span>.com</a
+      >
+    </section>
+    <main class="authenticate">
+      <div class="authenticate-container">
+        <div class="authenticate-child">
+          <div>
+            <button
+              class="langbtn-eng"
+              id="signin-lang-eng"
+              onclick="translateEng(this.id)"
+            >
+              ENG
+            </button>
+            <button
+              class="langbtn-geo"
+              id="signin-lang-geo"
+              onclick="translateGeo(this.id)"
+            >
+              GEO
+            </button>
+          </div>
+          <h1 class="signin-sign-eng">ავტორიზაცია</h1>
+        </div>
+        <div class="authenticate-child-2">
+          <form>
+            <input
+              type="email"
+              class="signin-email-eng"
+              placeholder="შეიყვანეთ ელ.ფოსტა"
+              required
+            />
+            <input
+              type="password"
+              class="signin-pass-eng"
+              placeholder="შეიყვანეთ პაროლი"
+              required
+            />
+            <button type="submit" class="btn-sign signin-btnsign-eng">
+              შესვლა
+            </button>
+          </form>
+        </div>
+
+        <div class="authenticate-child-3">
+          <a class="signin-back-eng" href="index.html">უკან</a>
+          <a class="signin-signup-eng" href="signup.html">რეგისტრაცია</a>
+        </div>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

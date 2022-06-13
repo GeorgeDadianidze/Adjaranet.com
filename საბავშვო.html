@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Adjaranet.com</title>
+  </head>
+  <body id="body">
+    <header class="main-header header-films">
+      <nav class="navbar navbar-films">
+        <i class="ph-list hamburger" onclick="mobileTabletMenu()"></i>
+
+        <div class="film-links">
+          <section class="links1">
+            <a href="index.html"
+              >adjara<span class="logo-span">net</span>.com</a
+            >
+          </section>
+          <section class="links2">
+            <a href="TV.html">
+              <i class="ph-television"></i>
+              <p>TV</p>
+            </a>
+            <a href="/ფილმები.html">
+              <i class="ph-film-slate"></i>
+              <p class="kids-films-eng">ფილმები</p>
+            </a>
+            <a href="საბავშვო.html">
+              <i class="ph-baby"></i>
+              <p class="kids-kids-eng">საბავშვო</p>
+            </a>
+          </section>
+
+          <i
+            class="ph-magnifying-glass search-delete"
+            style="color: white; cursor: pointer"
+          ></i>
+
+          <div class="sign">
+            <section class="links2 auth">
+              <a class="kids-signin-eng" href="signup.html">ავტორიზაცია</a>
+            </section>
+            <section class="links2 auth">
+              <a class="kids-signup-eng" href="signin.html">რეგისტრაცია</a>
+            </section>
+          </div>
+        </div>
+      </nav>
+      <section class="search search-films">
+        <input
+          type="text"
+          placeholder="ძიება..."
+          class="search-box kids-search-eng"
+        />
+        <i class="ph-magnifying-glass search-svg"></i>
+      </section>
+    </header>
+    <a class="contact-fixed" href="/კონტაქტი.html">
+      <i class="ph-envelope contact-svg"></i>
+      <p class="kids-cont-eng">კონტაქტი</p>
+    </a>
+    <section class="kids">
+      <div class="kid-title">
+        <span class="translate-kid-eng">საბავშვო</span>
+      </div>
+      <div class="lang-list-outer">
+        <div class="lang-list">
+          <button class="translate-geo-eng">ქართულად</button>
+          <button class="translate-eng-eng">ინგლისურად</button>
+          <button class="translate-ru-eng">რუსულად</button>
+          <button class="translate-rait-eng">რეიტინგით</button>
+        </div>
+        <a class="translate-kids-back" href="/index.html">უკან</a>
+      </div>
+    </section>
+    <section class="movies movies-wrap">
+      <img src="/imgs/kids/1.jpg" alt="" />
+      <img src="/imgs/kids/2.jpg" alt="" />
+      <img src="/imgs/kids/3.jpg" alt="" />
+      <img src="/imgs/kids/4.jpg" alt="" />
+      <img src="/imgs/kids/5.jpg" alt="" />
+      <img src="imgs/kids/6.jpg" alt="" />
+      <img src="imgs/kids/7.jpg" alt="" />
+      <img src="imgs/kids/8.jpg" alt="" />
+      <img src="imgs/kids/9.jpg" alt="" />
+      <img src="imgs/kids/10.jpg" alt="" />
+      <img src="imgs/kids/11.jpg" alt="" />
+      <img src="imgs/kids/12.jpg" alt="" />
+      <img src="imgs/kids/13.jpg" alt="" />
+      <img src="imgs/kids/14.jpg" alt="" />
+      <img src="imgs/kids/15.jpg" alt="" />
+    </section>
+    <footer>
+      <p class="kids-footer-eng"><span>18+</span>საიტი შეიცავს 18+ კონტენტს</p>
+      <p>&#169; 2013-2022 adjaranet.com</p>
+      <div>
+        <button
+          class="langbtn-eng"
+          id="kids-lang-eng"
+          onclick="translateEng(this.id)"
+        >
+          ENG
+        </button>
+        <button
+          class="langbtn-geo"
+          id="kids-lang-geo"
+          onclick="translateGeo(this.id)"
+        >
+          GEO
+        </button>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
